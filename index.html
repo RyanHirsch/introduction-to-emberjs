@@ -6,10 +6,11 @@
 <script src="scripts/store.js"></script>
 <script src="scripts/router.js"></script>
 
+<!-- Users -->
 <script src="scripts/models/user.js"></script>
 <script src="scripts/routes/usersRoute.js"></script>
 <script src="scripts/controllers/usersController.js"></script>
- <!-- 
+ <!--
     app.js
  -->
 <script type="text/x-handlebars" id="application">
@@ -19,6 +20,7 @@
     </div>
 </script>
 <script type="text/x-handlebars" id="users">
+    <div>Users: {{usersCount}}
     <ul class="users-listing">
         {{#each user in controller}}
             <li>{{user.name}}</li>
