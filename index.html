@@ -29,7 +29,17 @@
             <li>no users... :(</li>
         {{/each}}
     </ul>
+    {{outlet}}
 </script>
 <script type="text/x-handlebars" id="index">
-{{#link-to "users"}}Go to the users page{{/link-to}}
+    {{#link-to "users"}}Go to the users page{{/link-to}}
+</script>
+<script type="text/x-handlebars" id="user">
+    <div class="user-profile">
+        <img {{bind-attr src="avatarUrl"}} alt="User's avatar"/>
+        <h2>{{name}}</h2>
+        <span>{{email}}</span>
+        <p>{{bio}}</p>
+        <span>Created {{creationDate}}</span>
+    </div>
 </script>
