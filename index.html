@@ -14,6 +14,7 @@
 <script src="scripts/routes/userEditRoute.js"></script>
 <script src="scripts/controllers/usersController.js"></script>
 <script src="scripts/controllers/userController.js"></script>
+<script src="scripts/controllers/userEditController.js"></script>
  <!--
     app.js
  -->
@@ -62,4 +63,5 @@
         <label>User short bio</label>
         {{textarea value=bio}}
     </div>
+    <button {{action "save"}}>ok</button>
 </script>
