@@ -6,7 +6,7 @@ App.User = DS.Model.extend({
     creationDate:   DS.attr()
 });
 
-
+/*
 App.User.FIXTURES = [
     {
         id: 1,
@@ -25,3 +25,4 @@ App.User.FIXTURES = [
         creationDate: 'Fri, 07 Aug 2013 10:10:10 GMT'
     }
 ];
+*/
