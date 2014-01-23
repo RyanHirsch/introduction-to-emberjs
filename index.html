@@ -10,9 +10,11 @@
 <!-- Users -->
 <script src="scripts/models/user.js"></script>
 <script src="scripts/routes/usersRoute.js"></script>
+<script src="scripts/routes/usersCreateRoute.js"></script>
 <script src="scripts/routes/userRoute.js"></script>
 <script src="scripts/routes/userEditRoute.js"></script>
 <script src="scripts/controllers/usersController.js"></script>
+<script src="scripts/controllers/usersCreateController.js"></script>
 <script src="scripts/controllers/userController.js"></script>
 <script src="scripts/controllers/userEditController.js"></script>
  <!--
@@ -25,6 +27,7 @@
     </div>
 </script>
 <script type="text/x-handlebars" id="users">
+    {{#link-to "users.create" class="create-btn"}}Add User{{/link-to}}
     <div>Users: {{usersCount}}
     <ul class="users-listing">
         {{#each user in controller}}
