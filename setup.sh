@@ -18,5 +18,6 @@ wget http://code.jquery.com/jquery-2.0.3.min.js
 wget http://builds.emberjs.com/handlebars-1.0.0.js
 wget http://cdnjs.cloudflare.com/ajax/libs/ember.js/1.2.1/ember.js
 wget http://builds.emberjs.com/tags/v1.0.0-beta.3/ember-data.js
+wget http://momentjs.com/downloads/moment.min.js
 
 mv *.js vendor/
