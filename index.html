@@ -11,6 +11,7 @@
 <script src="scripts/models/user.js"></script>
 <script src="scripts/routes/usersRoute.js"></script>
 <script src="scripts/routes/userRoute.js"></script>
+<script src="scripts/routes/userEditRoute.js"></script>
 <script src="scripts/controllers/usersController.js"></script>
 <script src="scripts/controllers/userController.js"></script>
  <!--
@@ -43,5 +44,21 @@
         <span>{{email}}</span>
         <p>{{bio}}</p>
         <span>Created {{creationDate}}</span>
+    </div>
+    {{outlet}}
+</script>
+<script type="text/x-handlebars" id="user/edit">
+    <div class="user-edit">
+        <label>Choose user avatar</label>
+        {{input value=avatarUrl}}
+
+        <label>User name</label>
+        {{input value=name}}
+
+        <label>User email</label>
+        {{input value=email}}
+
+        <label>User short bio</label>
+        {{textarea value=bio}}
     </div>
 </script>
